@@ -259,7 +259,7 @@ label {
   width: 100%;
   max-width: 1440px;
   height: 584px;
-  background-image: url(../Images/Intro/Intro-img.png);
+  background-image: url(../images/Intro/Intro-img.png);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -376,7 +376,7 @@ input {
 /* /. howItWork */
 /* feedback */
 .feedback {
-  background-image: url(../Images/feedback/Feedback_bg.png);
+  background-image: url(../images/feedback/Feedback_bg.png);
   width: 100%;
   max-width: 1440px;
   height: 904px;
@@ -540,25 +540,25 @@ input {
   margin-bottom: 16px; }
 
 .carousel__item-1 {
-  background: url(../Images/carousel/1.png), white; }
+  background: url(../images/carousel/1.png), white; }
 
 .carousel__item-2 {
-  background: url(../Images/carousel/2.png), white; }
+  background: url(../images/carousel/2.png), white; }
 
 .carousel__item-3 {
-  background: url(../Images/carousel/3.png), white; }
+  background: url(../images/carousel/3.png), white; }
 
 .carousel__item-4 {
-  background: url(../Images/carousel/4.png), white; }
+  background: url(../images/carousel/4.png), white; }
 
 .carousel__item-5 {
-  background: url(../Images/carousel/5.png), white; }
+  background: url(../images/carousel/5.png), white; }
 
 .carousel__item-6 {
-  background: url(../Images/carousel/6.png), white; }
+  background: url(../images/carousel/6.png), white; }
 
 .carousel__item-7 {
-  background: url(../Images/carousel/7.png), white; }
+  background: url(../images/carousel/7.png), white; }
 
 .box-title {
   position: absolute;
@@ -629,7 +629,7 @@ input {
 
 /* career */
 .career .section__content-career {
-  background-image: url(../Images/Career/bgraund.png);
+  background-image: url(../images/Career/bgraund.png);
   width: 100%;
   max-width: 1280px;
   height: 634px;
@@ -655,7 +655,7 @@ input {
   margin-inline: auto; }
 
 .career .section__content-career .content__inner .inner__partners {
-  background-image: url(../Images/Career/innerBg.png);
+  background-image: url(../images/Career/innerBg.png);
   width: 100%;
   max-width: 323px;
   height: 178px;
