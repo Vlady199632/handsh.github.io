@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="Assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="Assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/Css/style.css">
+
+
+</head>
+<body>
+    <!--popup-->
+    <div class="popup" id="modal">
+        <span id="popup-close">&#x2715</span>
+        <div class="popup-content">
+            <div class="content-img">
+                <img src="Assets/Images/popUp.png" alt="" srcset="">
+            </div>
+            <div class="content-info">
+                <div class="popup-head">
+                    <h2 class="popup-title">Log In</h2>
+                </div><!--/. popup-head-->
+
+                <form action="#"  class="popup-form" id="logIn">
+                    <div class="form-email">
+                        <div><label for="userEmail">Email</label></div>
+                        <input type="email" autocomplete="on" name="userEmail" id="userEmail" placeholder="Write your email">
+                    </div>
+                    <div class="form-password">
+                        <div><label for="userPassword">Password</label></div>
+                        <input type="password" name="userPassword" id="userPassword" placeholder="Write your password">
+                    </div>
+                    <button type="submit" id="confirm" class="btn-login">Confirm</button>
+                </form><!--/.popup-form-->
+
+                <div class="info-registration">
+                    <h2 class="registration-title">Create the account.</h2>
+                    <a href="#" id="registration">Registration</a>
+                </div><!--/.info-registration-->
+            </div><!--/.content-info-->    
+        </div><!--/. popup-content-->
+    </div>
+    <!--/.popup-->
+    <header class="header">
+        <div class="business">
+            <div class="burger__business" id="business-menu" onclick="myFunction(this)">
+                <div class="bar1 business-bar"></div>
+                <div class="bar2 business-bar"></div>
+                <div class="bar3 business-bar"></div>
+            </div>
+            <nav class="business__nav">
+                <a href="#students" class="business__nav-item">Students</a>
+                <a href="#employers" class="business__nav-item">Employers</a>
+                <a href="#careerCenters" class="business__nav-item">Career Centers</a>
+            </nav>
+            <button class="business__nav-btn" id="logIn-btn">Log <br> in</button>
+
+        </div><!-- /. business-->
+        <div class="website">
+            <div class="logo">
+                <img src="Assets/Images/Logo.png" alt="Handshake-Logo">
+            </div>
+            <nav class="website__nav">
+                <a href="#overview" class="website__nav-item">Overview</a>
+                <a href="#howItWork" class="website__nav-item">How it works</a>
+                <a href="#whoIsHiring" class="website__nav-item">Who's hiring</a>
+                <a href="#careerTips" class="website__nav-item">Career tips</a>
+            </nav>
+            <div class="burger" id="web-menu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div><!-- /. website-->
+        <div class="join">
+            <h2 class="join__title">Handshake is hiring! Join us to make a big impact.</h2>
+            <a href="#" class="join__roles"> View current roles. &#8594;</a>
+        </div>
+    </header><!-- /. header-->
+    <div class="wrapper">
+
+        <div class="intro" id="overview">
+            <div class="intro__info">
+                <h1 class="intro__title">The #1 way college<br> students get hired</h1>
+                <h2 class="intro__subtitle">Find the right job. Get hired.</h2>
+            </div>
+
+            <form action="#" class="intro__form">
+                <input type="email" name="email" id="logInEmail" placeholder="Enter your .edu email address ">
+                <button id="signIn" type="submit">Sign up</button>
+            </form>
+        </div><!-- /. Intro -->
+
+        <div class="howItWork" id="howItWork">
+
+            <div class="howItWork__info">
+                <h2 class="howItWork__title">Full-time. Part-time.<br> Paid internships.</h2>
+                <p class="howItWork__text">Handshake has the latest jobs from employers hiring at your school</p>
+            </div><!-- /. howItWork__info -->
+
+            <div class="howItWork__steps">
+
+                <div class="steps__item">
+                    <img src="Assets/Images/howItWork/1.png" alt="" class="steps__item-img">
+                    <h3 class="steps__item-title">Find jobs for you</h3>
+                    <p class="steps__item-text">Receive personalized job<br> recommendations</p>
+                </div><!-- /. steps__item -->
+
+                <div class="steps__item">
+                    <img src="Assets/Images/howItWork/2.png" alt="" class="steps__item-img">
+                    <h3 class="steps__item-title">Attend virtual recruiting events</h3>
+                    <p class="steps__item-text">Stand out to employers during<br> virtual fairs and events</p>
+                </div><!-- /. steps__item -->
+
+                <div class="steps__item">
+                    <img src="Assets/Images/howItWork/3.png" alt="" class="steps__item-img">
+                    <h3 class="steps__item-title">Get hired</h3>
+                    <p class="steps__item-text">Apply to jobs meant for<br> students like you</p>
+                </div><!-- /. steps__item -->
+
+            </div><!-- /. howItWork__steps -->
+
+            <button class="btn">How it works</button>
+        </div><!-- /. howItWork -->
+
+        <div class="feedback" id="students">
+            <h2 class="feedback__title">Experience that<br> "just hired" feeling</h2>
+            <div class="slider">
+                <span onclick="minusSlider()" class="slider-prev">&#10094</span>
+                <span onclick="plusSlider()" class="slider-next">&#10095;</span>
+
+
+                <div class="slider__content slider__item">
+                    <img src="Assets/Images/feedback/slider__logo.png" alt="" class="slider__logo">
+                    <div class="slicer__content-info">
+                        <h3 class="content-info__title">“Without Handshake, I would never have gotten my<br> summer internship at IBM.”</h3>
+                        <div class="author-info">
+                            <h4 class="author-name">Wally,</h4>
+                            <p class="author-university">SNAU</p>
+                        </div><!-- /. author-info -->
+                    </div><!-- /. slicer__content-info -->
+                </div><!-- /. slider__content -->
+
+                <div class="slider__content slider__item">
+                    <img src="Assets/Images/feedback/slider__logo.png" alt="" class="slider__logo">
+                    <div class="slicer__content-info">
+                        <h3 class="content-info__title">“Without Handshake, I would never have gotten my<br> summer internship at IBM.”</h3>
+                        <div class="author-info">
+                            <h4 class="author-name">John,</h4>
+                            <p class="author-university">KPI</p>
+                        </div><!-- /. author-info -->
+                    </div><!-- /. slicer__content-info -->
+                </div><!-- /. slider__content -->
+
+                <div class="slider__content slider__item">
+                    <img src="Assets/Images/feedback/slider__logo.png" alt="" class="slider__logo">
+                    <div class="slicer__content-info">
+                        <h3 class="content-info__title">“Without Handshake, I would never have gotten my<br> summer internship at IBM.”</h3>
+                        <div class="author-info">
+                            <h4 class="author-name">Patricia,</h4>
+                            <p class="author-university">SUMDU</p>
+                        </div><!-- /. author-info -->
+                    </div><!-- /. slicer__content-info -->
+                </div><!-- /. slider__content -->
+            </div><!-- /. slider -->
+
+            <div class="slider-dots">
+                <span class="slider-dots_item" onclick="currentSlider(1)"></span>
+                <span class="slider-dots_item" onclick="currentSlider(2)"></span>
+                <span class="slider-dots_item" onclick="currentSlider(3)"></span>
+            </div><!--./ slider-dots-->
+
+        </div><!-- /. feedback -->
+
+        <section class="partners" id="employers">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="head__title">More than 550,000 employers hire<br> students on Handshake</h2>
+                    <p class="head__text">When you apply on Handshake, you have the advantage</p>
+                </div><!-- /. section__head-->
+                <div class="section__content">
+                    <div class="owl-carousel carousel" id="partners-carousel">
+
+                        <div class="carousel__item carousel-item">
+                            <div class="carousel__item-box carousel__item-1">
+                                <h3 class="box-title">TikTok</h3>
+                            </div><!-- /. carousel__item-box-->
+                            <h3 class="carousel__item-name">Social Media</h3>
+                        </div><!--/. carousel__item-->
+
+                        <div class="carousel__item carousel-item">
+                            <div class="carousel__item-box carousel__item-2">
+                                <h3 class="box-title">Pocket<br> Gems</h3>
+                            </div><!-- /. carousel__item-box-->
+                            <h3 class="carousel__item-name">Gaming</h3>
+                        </div><!--/. carousel__item-->
+
+                        <div class="carousel__item carousel-item">
+                            <div class="carousel__item-box carousel__item-3">
+                                <h3 class="box-title">Bank of<br> America</h3>
+                            </div><!-- /. carousel__item-box-->
+                            <h3 class="carousel__item-name">Finance</h3>
+                        </div><!--/. carousel__item-->
+
+                        <div class="carousel__item carousel-item">
+                            <div class="carousel__item-box carousel__item-4">
+                                <h3 class="box-title">Target</h3>
+                            </div><!-- /. carousel__item-box-->
+                            <h3 class="carousel__item-name">Major Retail</h3>
+                        </div><!--/. carousel__item-->
+
+                        <div class="carousel__item carousel-item">
+                            <div class="carousel__item-box carousel__item-5">
+                                <h3 class="box-title">Procter<br> &<br> Gamble</h3>
+                            </div><!-- /. carousel__item-box-->
+                            <h3 class="carousel__item-name">Consumer Goods</h3>
+                        </div><!--/. carousel__item-->
+
+                        <div class="carousel__item carousel-item">
+                            <div class="carousel__item-box carousel__item-6">
+                                <h3 class="box-title">General<br> Mills</h3>
+                            </div><!-- /. carousel__item-box-->
+                            <h3 class="carousel__item-name">Food & Beverage</h3>
+                        </div><!--/. carousel__item-->
+
+                        <div class="carousel__item carousel-item">
+                            <div class="carousel__item-box carousel__item-7">
+                                <h3 class="box-title">KIPP<br> Schools</h3>
+                            </div><!-- /. carousel__item-box-->
+                            <h3 class="carousel__item-name">Education</h3>
+                        </div><!--/. carousel__item-->
+                    </div><!--/. carousel -->
+
+                    <button class="btn">Who's hiring</button>
+                </div><!-- /. section__content-->
+            </div> <!-- /. container -->
+        </section><!-- /. partners -->
+
+        <section class="exclusive" id="careerTips">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="head__title">Exclusive virtual career<br> fairs and events</h2>
+                    <p class="head__text">No waiting in line. Secure your spot to meet top employers hiring<br> students at your school.</p>
+                </div><!--/. section__head-->
+                <button class="btn">Learn more</button>
+            </div><!--/. container-->
+        </section><!--/. exclusive-->
+
+        <section class="career" id="whoIsHiring">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="head__title">The leading career site<br> for college students</h2>
+                </div><!--/. section__head-->
+                <div class="section__content-career">
+                    <div class="content__inner">
+                        <h3 class="inner__title">Handshake partners with more than 1,200 colleges and universities to help students find great jobs</h3>
+                        <div class="inner__partners"></div>
+                    </div><!--/. content__info-->
+                </div><!--/. section__content -->
+            </div><!--/. container-->
+        </section><!--/. career-->
+
+        <section class="job">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="head__title">Take the job search with you</h2>
+                    <p class="head__text">Download the Handshake app to stay updated on fresh<br> jobs and virtual events, then apply from anywhere</p>
+                </div><!--/. section__head-->
+                <div class="section__content">
+                    <div class="content__buttons">
+                        <button class="store"><img src="Assets/Images/job/appStore.png" alt=""></button>
+                        <button class="store"><img src="Assets/Images/job/googlePlay.png" alt=""></button>
+                    </div><!--/. content__buttons-->
+                    <div class="content__img">
+                        <img src="Assets/Images/job/phone.png" alt="">
+                    </div>
+                </div><!--/. section__content-->
+            </div><!--/. container-->
+        </section><!--/. job-->
+        <section class="recruiter" id="careerCenters">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="head__title">Get recruited for your<br> next job</h2>
+                    <p class="head__text">Enter your .edu email address to get started</p>
+                </div><!--/. section__head-->
+                <div class="section__content">
+                    <form action="#" id="recruiter-form">
+                        <div class="form__inner">
+                            <input type="email" name="email" id="recruiterEmail" placeholder="Write your Email">
+                        </div>
+                        <div class="form__inner">
+                            <input type="submit" id="recruiterSubmit" value="Sign Up">
+                        </div>
+                    </form>
+                </div><!--/. section__content-->
+            </div><!--/. container-->
+        </section><!--/. recruiter-->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="logo">
+                        <img src="Assets/Images/footer/footerLogo.png">
+                        <div class="footer__btn">
+                            <button class="store"><img src="Assets/Images/footer/appStore.png"></button>
+                            <button class="store"><img src="Assets/Images/footer/googlePlay.png"></button>
+                        </div>
+                    </div><!--/. logo-->
+                    <div class="footer__nav">
+                        <nav class="nav-list">
+                            <h3 class="list__title">Students</h3>
+                                <ul>
+                                    <li><a class="list__item" href="#">How it works</a></li>
+                                    <li><a class="list__item" href="#">Who's hiring</a></li>
+                                    <li><a class="list__item" href="#">Career tips</a></li>
+                                    <li><a class="list__item" href="#">Companies</a></li>
+                                    <li><a class="list__item" href="#">Job roles</a></li>
+                                    <li><a class="list__item" href="#">Help center</a></li>
+                                </ul>
+                        </nav>
+                        <nav class="nav-list">
+                            <h3 class="list__title">Employers</h3>
+                                <ul>
+                                    <li><a class="list__item" href="#">Solutions</a></li>
+                                    <li><a class="list__item" href="#">Products</a></li>
+                                    <li><a class="list__item" href="#">Customers</a></li>
+                                    <li><a class="list__item" href="#">Resources</a></li>
+                                    <li><a class="list__item" href="#">Blog</a></li>
+                                    <li><a class="list__item" href="#">Request demo</a></li>
+                                    <li><a class="list__item" href="#">Help center</a></li>
+                                </ul>
+                        </nav>
+                        <nav class="nav-list">
+                            <h3 class="list__title">Career Centers</h3>
+                                <ul>
+                                    <li><a class="list__item" href="#">Marketing toolkit</a></li>
+                                    <li><a class="list__item" href="#">Resources</a></li>
+                                    <li><a class="list__item" href="#">Events</a></li>
+                                    <li><a class="list__item" href="#">Security</a></li>
+                                    <li><a class="list__item" href="#">Request demo</a></li>
+                                    <li><a class="list__item" href="#">Help center</a></li>
+                                </ul>
+                        </nav>
+                        <nav class="nav-list">
+                            <h3 class="list__title">Company</h3>
+                                <ul>
+                                    <li><a class="list__item" href="#">About</a></li>
+                                    <li><a class="list__item" href="#">Join us</a></li>
+                                    <li><a class="list__item" href="#">Press</a></li>
+                                    <li><a class="list__item" href="#">Blog</a></li>
+                                    <li><a class="list__item" href="#">Brand guidelines</a></li>
+                                </ul>
+                        </nav>
+                        <nav class="nav-list">
+                            <h3 class="list__title">Support</h3>
+                                <ul>
+                                    <li><a class="list__item" href="#">Students</a></li>
+                                    <li><a class="list__item" href="#">Employers</a></li>
+                                    <li><a class="list__item" href="#">Career Centers</a></li>
+                                </ul>
+                        </nav>
+                    </div>
+                </div><!--/. footer__content-->
+                <div class="footer__social">
+                    <nav class="social__nav">
+                        <a href="#">©2021 Handshake. All rights reserved.</a>
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Terms of service</a>
+                    </nav>
+                    <nav class="social__links">
+                        <a href="https://www.instagram.com/vlady_vp/"><img src="Assets/Images/footer/social/inst.png"></a>
+                        <a href="https://www.facebook.com/vladyslav.protsenko.off"><img src="Assets/Images/footer/social/facebook.png"></a>
+                        <a href="https://twitter.com/?lang=ua"><img src="Assets/Images/footer/social/twitter.png"></a>
+                        <a href="https://ua.linkedin.com/"><img src="Assets/Images/footer/social/linkedIn.png"></a>
+                    </nav>
+                </div><!--/. footer__social-->
+            </div><!--/. container-->
+        </footer><!--/. footer-->
+    </div><!--/.wrapper-->
+
+
+    <script src="Assets/jquery/dist/jquery.min.js"></script>
+    <script src="Assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="Assets/Script/script.js"></script>
+</body>
+</html>
